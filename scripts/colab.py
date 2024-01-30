@@ -18,7 +18,7 @@ def on_ui_tabs():
         """)
         with gr.Group():
             with gr.Box():
-                command = gr.Textbox(label="Input cmd Here", max_lines=1, placeholder="cmd")
+                command = gr.Textbox(label="Input cmd Here", max_lines=1, placeholder="command")
                 out_text = gr.Textbox(label="Output Results (no need to scroll down if the output code has appeared, if the output code appears, the code sign is complete)", placeholder="outputs")
                 btn_run = gr.Button("cutoff")
                 btn_run.click(fn=run, inputs=command, outputs=out_text)
